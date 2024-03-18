@@ -15,14 +15,27 @@
 <body class = "bg-dark text-white">
     
     <!-- Top navigation bar-->
-    <nav class="navbar p-3 sticky-top navbar-dark bg-primary">
+    <header class="navbar p-3 sticky-top navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="Bootstrap_logo">
+            <img src="./assets/icons/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="Bootstrap_logo">
             Bootstrap'em zabawy...
+           <img src="./assets/icons/smile-icon.svg" fill="currentColor" width="30" height="30" class="d-inline-block align-top" alt="smile">
         </a>
         <a class="navbar-brand" style="font-size:xx-large">Adam Mickiewicz prezentuje:</a>
-        <a href="https://pl.wikipedia.org/wiki/Pan_Tadeusz" role="button" class="btn btn-light btn-lg" target="_blank">"Pan Tadeusz" na Wiki</a>
-    </nav>
+        <div class="dropdown">
+            <a role="button" class="btn btn-warning dropdown-toggle btn-lg" data-bs-toggle="dropdown" aria-expanded="false">
+            Treści Bonusowe
+            <img src="./assets/icons/emoji-grin.svg" width="30" height="30" class="d-inline-block align-top" alt="smile">
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://pl.wikipedia.org/wiki/Pan_Tadeusz" target="_blank">Pan Tadeusz (Wikipedia)</a></li>
+                <li><a class="dropdown-item" href="https://www.filmweb.pl/film/Pan+Tadeusz-1999-630" target="_blank">Ekranizacja z 1999 (Filmweb)</a></li>
+                <li><a class="dropdown-item" href="https://www.filmweb.pl/film/Pan+Tadeusz-1928-35121" target="_blank">Ekranizacja z 1928 (Filmweb)</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://pl.wikipedia.org/wiki/XIII_Ksi%C4%99ga_Pana_Tadeusza" target="_blank">Księga 13 (Wikipedia)</a></li>
+            </ul>
+        </div>
+    </header>
     
     <header class="p-2 mb-5 container text-center">
         <h1>Pan Tadeusz, czyli ostatni zajazd na Litwie:<br>historia szlachecka z roku 1811 i 1812 <br> we dwunastu księgach wierszem</h1>
@@ -34,7 +47,7 @@
                 <section class = " p-4 mb-5 bg-secondary text-white">
                     <h2>Spis treści</h2>
                     <ul class="list-group">
-                        <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true" >Index</a>
+                        <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true" >Strona Główna (Index)</a>
                         <a href="k1.html" class="list-group-item list-group-item-action">Księga 1: Gospodarstwo</a>
                         <a href="k2.html" class="list-group-item list-group-item-action">Księga 2: Zamek</a>
                         <a href="k3.html" class="list-group-item list-group-item-action">Księga 3: Umizgi</a>
@@ -51,7 +64,7 @@
                 </section>
             </div>
             <div class="col">
-                <img src="movie_PT6.jpg" alt="Pan Tadeusz -Ekranizacja" class="mb-5 rounded img-thumbnail">
+                <img src="./assets/img/movie_PT6.jpg" alt="Pan Tadeusz -Ekranizacja" class="mb-5 rounded img-thumbnail">
             </div>
         </div>
     </div>
