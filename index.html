@@ -48,19 +48,19 @@
                     <img src="./assets/img/Modern_PT.jpg" alt="Pan Tadeusz -Ekranizacja" class="mb-5 rounded img-thumbnail">
                     <h2>Spis treści</h2>
                     <ul class="list-group">
-                        <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true" >Strona Główna (Index)</a>
-                        <a href="k1.html" class="list-group-item list-group-item-action">Księga 1: Gospodarstwo</a>
-                        <a href="k2.html" class="list-group-item list-group-item-action">Księga 2: Zamek</a>
-                        <a href="k3.html" class="list-group-item list-group-item-action">Księga 3: Umizgi</a>
-                        <a href="k4.html" class="list-group-item list-group-item-action">Księga 4: Dyplomatyka i łowy</a>
-                        <a href="k5.html" class="list-group-item list-group-item-action">Księga 5: Kłótnia</a>
-                        <a href="k6.html" class="list-group-item list-group-item-action">Księga 6: Zaścianek</a>
-                        <a href="k7.html" class="list-group-item list-group-item-action">Księga 7: Rada</a>
-                        <a href="k8.html" class="list-group-item list-group-item-action">Księga 8: Zajazd</a>
-                        <a href="k9.html" class="list-group-item list-group-item-action">Księga 9: Bitwa</a>
-                        <a href="k10.html" class="list-group-item list-group-item-action">Księga 10: Emigracja. Jacek</a>
-                        <a href="k11.html" class="list-group-item list-group-item-action">Księga 11: Rok 1812</a>
-                        <a href="k12.html" class="list-group-item list-group-item-action" >Księga 12: Kochajmy się</a>
+                        <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true" data-bs-toggle="tooltip" data-bs-title="Tutaj jesteś :)" data-bs-placement="left">Strona Główna (Index)</a>
+                        <a href="k1.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Kliknij i czytaj!" data-bs-placement="left">Księga 1: Gospodarstwo</a>
+                        <a href="k2.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Pewnie, po co od początku ;)" data-bs-placement="left">Księga 2: Zamek</a>
+                        <a href="k3.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 3" data-bs-placement="left">Księga 3: Umizgi</a>
+                        <a href="k4.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Natenczas Wojski..." data-bs-placement="left">Księga 4: Dyplomatyka i łowy</a>
+                        <a href="k5.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 5" data-bs-placement="left">Księga 5: Kłótnia</a>
+                        <a href="k6.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 6" data-bs-placement="left">Księga 6: Zaścianek</a>
+                        <a href="k7.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 7" data-bs-placement="left">Księga 7: Rada</a>
+                        <a href="k8.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 8" data-bs-placement="left">Księga 8: Zajazd</a>
+                        <a href="k9.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 9" data-bs-placement="left">Księga 9: Bitwa</a>
+                        <a href="k10.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Przeskocz do księgi 10" data-bs-placement="left">Księga 10: Emigracja. Jacek</a>
+                        <a href="k11.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="Już prawie koniec" data-bs-placement="left">Księga 11: Rok 1812</a>
+                        <a href="k12.html" class="list-group-item list-group-item-action" data-bs-toggle="tooltip" data-bs-title="I to by było na tyle..." data-bs-placement="left">Księga 12: Kochajmy się</a>
                     </ul>
                 </section>
             </div>
@@ -68,7 +68,7 @@
                 <div class="mb-5">
                     <h1>Pan Tadeusz, czyli ostatni zajazd na Litwie:<br>historia szlachecka z roku 1811 i 1812 <br> we dwunastu księgach wierszem</h1>
                 </div>
-                    <img src="./assets/img/movie_PT6.jpg" alt="Pan Tadeusz -Ekranizacja" class="mb-5 rounded img-thumbnail">
+                    <img src="./assets/img/movie_PT6.jpg" alt="Pan Tadeusz -Ekranizacja" class="mb-5 rounded img-thumbnail" data-bs-toggle="tooltip" data-bs-title="Michał i Alicja i tylko Oskara brak..." data-bs-placement="right">
             </div>
         </div>
     </div>
@@ -77,6 +77,11 @@
     <footer class="navbar p-2 fixed-bottom navbar-dark bg-secondary justify-content-center">
         <a class="navbar-brand">Tomasz Wojdyla, ZIISN1-1212, Uniwersytet Ekonomiczny w Krakowie</a>
     </footer>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
 </body>
 </html>
